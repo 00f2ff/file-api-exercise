@@ -47,8 +47,3 @@ fun Application.configureSerialization() {
         }
     }
 }
-
-/*
-todo: do I want to make a recursive flag?
-todo: get rid of type in serialization
- */
