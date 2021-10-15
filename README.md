@@ -1,17 +1,21 @@
 # File System API
 
-## Requirements
+My submission for a File System API is built using Kotlin and the [ktor](https://ktor.io/)
+server framework. ktor allows developers to build asychronous servers
+with imperative code.
 
-- [x] Report all files in directory responses, including hidden files.
-- [x] You should report file name, owner, size, and permissions (read/write/execute - standard octal representation is acceptable).
-- [] Document your API
-- [] The application must be Dockerized.
-- [] Provide a shell script of some kind to actually run the app from the command line
-- [] Write as many unit tests as you can.
-- [] Include a test script
+### API Documentation
+Copy the contents of `openapi_spec.yaml` into a [Swagger editor](https://editor.swagger.io/)
+to see how the API accepts a path and returns different types of objects.
 
-## Bonus
+### Running the Server
+1. Enter `chmod a+rx run.sh` to make `run.sh` into an executable
+2. `run.sh` takes an absolute filepath as a parameter (no quotes). Run
+   something like `run.sh /Users/Duncan` to start the server.
 
-- [] Create POST, PUT, and DELETE endpoints to add, replace, and delete directories and files as appropriate. Any request bodies should be JSON.
-- [] Document your API using Swagger.
-- [] Create a Helm chart.
+`run.sh` sets the filepath parameter as an environment variable. The variable
+then gets picked up by the `docker-compose` and inserted into the app's
+environment, as well as mounted as a volume on the container. When the
+API receives requests, the specified portion of the file system is read
+and returns responses accordingly.
+

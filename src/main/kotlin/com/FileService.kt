@@ -3,7 +3,8 @@ package com
 import com.data.Directory
 import com.data.SystemFile
 import com.data.WeaveData
-import io.ktor.request.*
+import io.ktor.request.ApplicationRequest
+import io.ktor.request.path
 import kotlinx.serialization.Serializable
 import java.nio.file.Files
 import java.nio.file.Path
@@ -41,6 +42,7 @@ object FileService {
     /**
      * Given a base path supplied by the environment and another path supplied by the request, encapsulates
      * file data either as an individual file with content, or as a directory listing.
+     *
      */
     fun queryFileSystem(basePath: Path, request: ApplicationRequest): Result {
         val resolvedPath: Path = Path.of(basePath.toUri().path + sanitizeRequestPath(request))

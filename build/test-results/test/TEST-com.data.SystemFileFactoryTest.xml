@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.data.SystemFileFactoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-15T03:07:57" hostname="duncans-mbp.lan" time="0.003">
+  <properties/>
+  <testcase name="a file can be created using just a path" classname="com.data.SystemFileFactoryTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,2 @@
+[90m/Users/duncan/workspaces/interview_2021/weavegrid/src/test/kotlin/com/[0mApplicationTest.kt[90m:[0m6[90m:1:[0m Wildcard import
+[90m/Users/duncan/workspaces/interview_2021/weavegrid/src/test/kotlin/com/[0mApplicationTest.kt[90m:[0m7[90m:1:[0m Wildcard import

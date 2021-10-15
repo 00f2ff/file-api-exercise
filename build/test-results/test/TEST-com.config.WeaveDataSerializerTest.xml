@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.config.WeaveDataSerializerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-15T03:07:56" hostname="duncans-mbp.lan" time="0.734">
+  <properties/>
+  <testcase name="polymorphic deserialization works" classname="com.config.WeaveDataSerializerTest" time="0.734"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

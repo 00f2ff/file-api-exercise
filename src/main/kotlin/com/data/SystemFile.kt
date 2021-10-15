@@ -11,7 +11,8 @@ data class SystemFile(
     val owner: String,
     val size: Long,
     val permissions: String,
-    val contents: String? = null
+    val contents: String? = null,
+    override val type: String = "file"
 ) : WeaveData() {
     companion object {
         fun create(path: Path, includeContents: Boolean = false): SystemFile {
